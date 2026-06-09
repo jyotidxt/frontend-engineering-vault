@@ -1,17 +1,15 @@
-// /* <div className="p-3 bg-sky-500/10 text-sky-400 rounded-full mb-4 animate-bounce">
-//     ⚡
-//   </div> */
-  // src/App.jsx
 import React from 'react';
-// import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
-// import HubHome from './HubHome';
-
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import HubHome from '../HubHome';
+import Pagination from './challenges/Pagination';
 
 export default function App() {
   return (
-    <div className="p-3 bg-sky-500/10 text-sky-400 rounded-full mb-4 animate-bounce">
-     ⚡
-      </div>
-   
+    <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<HubHome />} />
+          <Route path="/pagination" element={<Pagination />} />
+        </Routes>
+    </BrowserRouter>
   );
 }
