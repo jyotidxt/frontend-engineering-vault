@@ -8,12 +8,12 @@ export const challenges = [
     path: "/pagination",
     tagColor: "amber"
   },
-//   {
-//     id: 2,
-//     title: "02. ",
-//     type: "UI Component",
-//     description: "",
-//     path: "/,
-//     tagColor: "sky"
-//   }
+  {
+    id: 2,
+    title: "02. Tab Form Component",
+    type: "Machine Coding",
+    description: "This is tab form compopnent",
+    path: "/tabformcomponent",
+    tagColor: "sky"
+  }
 ];

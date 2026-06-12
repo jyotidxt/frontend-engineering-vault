@@ -23,8 +23,7 @@ export default function HubHome() {
             </h1>
           </div>
           <p className="text-[#555555] text-sm font-medium tracking-wide max-w-sm md:text-right leading-relaxed">
-            A frontend engineering workspace tracking my frontend practice journey with Machine coding quetsions and some Projects. 
-             <p> _Dixit</p>              
+            A frontend engineering workspace tracking my frontend practice journey with Machine coding quetsions and some Projects.              
           </p>
         </header>
         
@@ -58,7 +57,7 @@ export default function HubHome() {
                 to={item.path} 
                 className="block w-full text-center bg-orange-500 text-white font-black py-3 rounded-xl text-xs uppercase tracking-widest border-2 border-[#1E1E1E] shadow-[3px_3px_0px_#1E1E1E] transition-all duration-200 hover:bg-amber-400 hover:text-[#1E1E1E] hover:shadow-[0px_0px_0px_#1E1E1E] hover:translate-x-0.5 hover:translate-y-0.5 active:translate-x-1 active:translate-y-1"
               >
-                Launch Workspace →
+                See →
               </Link>
             </div>
           ))}
