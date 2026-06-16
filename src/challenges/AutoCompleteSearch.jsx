@@ -25,7 +25,7 @@ export default function AutoCompleteSearch() {
             setResults(data?.recipes);
             setCache((prev) => ({ ...prev, [input]: data?.recipes }));
         } catch (error) {
-            console.error("Error fetching data:", error);
+            console.error("Error fetching data:", error); 
         }
     };
 
