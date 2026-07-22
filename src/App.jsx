@@ -4,7 +4,7 @@ import HubHome from '../HubHome';
 import Pagination from './challenges/Pagination';
 import TabFormComponent from './challenges/TabFormComponent';
 import AutoCompleteSearch from './challenges/AutoCompleteSearch';
-
+import VirtualizedList from './challenges/VirtualizedList';
 export default function App() {
   return (
     <BrowserRouter>
@@ -13,6 +13,7 @@ export default function App() {
           <Route path="/pagination" element={<Pagination />} />
           <Route path="/tabformcomponent" element={<TabFormComponent />} />
            <Route path="/autocompletesearch" element={<AutoCompleteSearch/>}/>
+           <Route path="/virtualizedlist" element={<VirtualizedList/>}/>
         </Routes>
     </BrowserRouter>
   );

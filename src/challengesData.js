@@ -18,10 +18,18 @@ export const challenges = [
   },
   {
     id: 3,
-    title: "02. AutoComplete Search Bar",
+    title: "03. AutoComplete Search Bar",
     type: "Machine Coding",
     description: "An autocomplete search bar is like Google’s search box. As you type a word, it instantly guesses what you want and shows a list of matching suggestions below it. It also includes ENHANCEMENTS also used DEBOUNCING and CACHED DATA for PERFORMANCE OPTIMIZATION: If you click outside the search bar, the suggestions list hides, and when you focus on the input field again, the list reappears.",
     path: "/autocompletesearch",
+    tagColor: "green",
+  },
+    {
+    id: 4,
+    title: "04 Virtualized List (Infinite Scroll)",
+    type: "Machine Coding",
+    description: "An autocomplete  again, the list reappears.",
+    path: "/virtualizedlist",
     tagColor: "green",
   }
 ];
