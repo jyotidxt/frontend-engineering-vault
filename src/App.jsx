@@ -5,6 +5,7 @@ import Pagination from './challenges/Pagination';
 import TabFormComponent from './challenges/TabFormComponent';
 import AutoCompleteSearch from './challenges/AutoCompleteSearch';
 import VirtualizedList from './challenges/VirtualizedList';
+import ProgressBar from './challenges/ProgressBar';
 export default function App() {
   return (
     <BrowserRouter>
@@ -14,6 +15,7 @@ export default function App() {
           <Route path="/tabformcomponent" element={<TabFormComponent />} />
            <Route path="/autocompletesearch" element={<AutoCompleteSearch/>}/>
            <Route path="/virtualizedlist" element={<VirtualizedList/>}/>
+               <Route path="/progressbar" element={<ProgressBar/>}/>
         </Routes>
     </BrowserRouter>
   );

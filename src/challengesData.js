@@ -28,8 +28,16 @@ export const challenges = [
     id: 4,
     title: "04 Virtualized List (Infinite Scroll)",
     type: "Machine Coding",
-    description: "An autocomplete  again, the list reappears.",
+    description: "Coming...",
     path: "/virtualizedlist",
     tagColor: "green",
+  },
+    {
+    id: 5,
+    title: "05 Progress Bar",
+    type: "Machine Coding",
+    description: "A progressBar with animation styles like loading % effect also.",
+    path: "/progressbar",
+    tagColor: "red",
   }
 ];
