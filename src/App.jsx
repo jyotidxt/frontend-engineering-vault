@@ -6,6 +6,7 @@ import TabFormComponent from './challenges/TabFormComponent';
 import AutoCompleteSearch from './challenges/AutoCompleteSearch';
 import VirtualizedList from './challenges/VirtualizedList';
 import ProgressBar from './challenges/ProgressBar';
+import OTPInput from './challenges/OTPInput';
 export default function App() {
   return (
     <BrowserRouter>
@@ -14,8 +15,9 @@ export default function App() {
           <Route path="/pagination" element={<Pagination />} />
           <Route path="/tabformcomponent" element={<TabFormComponent />} />
            <Route path="/autocompletesearch" element={<AutoCompleteSearch/>}/>
-           <Route path="/virtualizedlist" element={<VirtualizedList/>}/>
+           <Route path="/otpinput" element={<OTPInput/>}/>
                <Route path="/progressbar" element={<ProgressBar/>}/>
+                 <Route path="/virtualizedlist" element={<VirtualizedList/>}/>
         </Routes>
     </BrowserRouter>
   );

@@ -6,7 +6,7 @@ export const challenges = [
     type: "Machine Coding",
     description: " Pagination is a technique used to break a large set of data into smaller, manageable chunks. Instead of loading thousands of records at once—which would crash the browser or make the page crawl—the system retrieves only a specific segment of data at a time.Eg. adding page numbers...",
     path: "/pagination",
-    tagColor: "amber"
+    companyName: "Swiggy, Flipkart"
   },
   {
     id: 2,
@@ -14,7 +14,7 @@ export const challenges = [
     type: "Machine Coding",
     description: "This component  solves the problem of managing multi-category form state without losing data or degrading performance during tab switches. Instead of wiping out a user's selections when they navigate between tabs, a proper implementation decouples the UI from the data layer, ensuring inputs are safely cached in memory",
     path: "/tabformcomponent",
-    tagColor: "sky"
+    companyName: "Myntra Zepto"
   },
   {
     id: 3,
@@ -22,15 +22,15 @@ export const challenges = [
     type: "Machine Coding",
     description: "An autocomplete search bar is like Google’s search box. As you type a word, it instantly guesses what you want and shows a list of matching suggestions below it. It also includes ENHANCEMENTS also used DEBOUNCING and CACHED DATA for PERFORMANCE OPTIMIZATION: If you click outside the search bar, the suggestions list hides, and when you focus on the input field again, the list reappears.",
     path: "/autocompletesearch",
-    tagColor: "green",
+    companyName: "Amazon, Ola",
   },
     {
     id: 4,
-    title: "04 Virtualized List (Infinite Scroll)",
+    title: "04 OTP Input",
     type: "Machine Coding",
-    description: "Coming...",
-    path: "/virtualizedlist",
-    tagColor: "green",
+    description: "In this, I solve a popular React interview question by building a clean, user-friendly OTP Input Component... ✅ How to build a multi-field OTP input in React✅ Handle focus, backspace, paste & validation ✅ Improve your React & JavaScript UI skills",
+    path: "/otpinput",
+    companyName: "Flipkart, Swiggy, Myntra",
   },
     {
     id: 5,
@@ -38,6 +38,14 @@ export const challenges = [
     type: "Machine Coding",
     description: "A progressBar with animation styles like loading % effect also.",
     path: "/progressbar",
-    tagColor: "red",
-  }
+    companyName: "Google, Uber, Meta",
+  },
+    {
+    id: 6,
+    title: "06 Virtualized List (Infinite Scroll)",
+    type: "Machine Coding",
+    description: "Coming...",
+    path: "/virtualizedlist",
+    companyName: "green",
+  },
 ];

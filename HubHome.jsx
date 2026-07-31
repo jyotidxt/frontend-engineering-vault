@@ -45,9 +45,11 @@ export default function HubHome() {
               <h3 className="text-xl font-black text-[#1E1E1E] tracking-tight mb-2 group-hover:text-orange-600 transition-colors duration-200">
                 {item.title}
               </h3>
-
+              <span className="text-[10px] uppercase font-mono font-black tracking-wider px-2.5 py-1  bg-green-100 text-slate-800 rounded-md border border-green-500">
+                {item.companyName}
+              </span>
               {/* Description */}
-              <p className="text-[#444444] text-xs font-medium leading-relaxed mb-8 min-h-[48px]">
+              <p className="text-[#444444] text-xs font-medium mt-2 leading-relaxed mb-8 min-h-[48px]">
                 {item.description}
               </p>
 
