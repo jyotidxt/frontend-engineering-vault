@@ -2,7 +2,7 @@ import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import AssistantAvatar from "./AssistantAvatar";
 import ChatWindow from "./ChatWindow";
-import "./assistant.css";
+import "./Assistant.css";
 
 export default function Assistant() {
   const [isOpen, setIsOpen] = useState(false);
