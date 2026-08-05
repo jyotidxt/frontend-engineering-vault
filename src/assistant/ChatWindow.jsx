@@ -1,4 +1,4 @@
-    import divya from "./assistant.png";
+    import divya from "./Assistant.png";
     // import useChat from '../hooks/useChat.js'
     import { askGemini } from "./api.js";
 import { useState, useRef, useEffect } from "react";

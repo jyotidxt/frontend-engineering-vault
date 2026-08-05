@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Sparkles } from "lucide-react";
-import girl from "./assistant.png";
+import girl from "./Assistant.png";
 
 export default function AssistantAvatar({ open, setOpen }) {
   const [showBubble, setShowBubble] = useState(true);
