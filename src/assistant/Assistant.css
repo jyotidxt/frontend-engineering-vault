@@ -1,0 +1,396 @@
+/* ===============================
+   DIVYA AI ASSISTANT
+================================*/
+
+.divya-chat {
+  position: relative;
+  overflow: hidden;
+  border-radius: 32px;
+  background: rgba(17, 17, 17, 0.88);
+  backdrop-filter: blur(30px);
+}
+
+/* Animated Pink Border */
+
+.divya-chat::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border-radius: inherit;
+
+  background: linear-gradient(
+      135deg,
+      #ff4fa2,
+      #ff8fd1,
+      #c84dff,
+      #ff4fa2
+  );
+
+  background-size: 300% 300%;
+
+  animation: borderMove 7s linear infinite;
+
+  z-index: -2;
+}
+
+.divya-chat::after {
+  content: "";
+
+  position: absolute;
+
+  inset: 1px;
+
+  border-radius: inherit;
+
+  background: rgba(15,15,15,.92);
+
+  z-index: -1;
+}
+
+@keyframes borderMove{
+
+0%{
+
+background-position:0% 50%;
+
+}
+
+50%{
+
+background-position:100% 50%;
+
+}
+
+100%{
+
+background-position:0% 50%;
+
+}
+
+}
+
+/* Pink Glow */
+
+.divya-glow{
+
+box-shadow:
+
+0 0 10px rgba(255,0,140,.25),
+
+0 0 40px rgba(255,0,140,.25),
+
+0 0 70px rgba(255,0,140,.2);
+
+}
+
+/* Floating */
+
+.float{
+
+animation:float 4s ease-in-out infinite;
+
+}
+
+@keyframes float{
+
+0%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-10px);
+
+}
+
+100%{
+
+transform:translateY(0);
+
+}
+
+}
+
+/* Message Animation */
+
+.message{
+
+animation:message .3s ease;
+
+}
+
+@keyframes message{
+
+from{
+
+opacity:0;
+
+transform:translateY(20px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+/* Typing */
+
+.typing{
+
+display:flex;
+
+gap:6px;
+
+}
+
+.typing span{
+
+width:8px;
+
+height:8px;
+
+background:#ff5fa2;
+
+border-radius:50%;
+
+animation:bounce .8s infinite;
+
+}
+
+.typing span:nth-child(2){
+
+animation-delay:.2s;
+
+}
+
+.typing span:nth-child(3){
+
+animation-delay:.4s;
+
+}
+
+@keyframes bounce{
+
+0%,80%,100%{
+
+transform:scale(.6);
+
+opacity:.5;
+
+}
+
+40%{
+
+transform:scale(1);
+
+opacity:1;
+
+}
+
+}
+
+/* Beautiful Scrollbar */
+
+::-webkit-scrollbar{
+
+width:8px;
+
+}
+
+::-webkit-scrollbar-track{
+
+background:transparent;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+background:#ff4fa2;
+
+border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+background:#ff7ec5;
+
+}
+
+/* Glass Cards */
+
+.glass{
+
+background:rgba(255,255,255,.05);
+
+backdrop-filter:blur(20px);
+
+border:1px solid rgba(255,255,255,.08);
+
+}
+
+/* Buttons */
+
+.divya-btn{
+
+transition:.35s;
+
+}
+
+.divya-btn:hover{
+
+transform:translateY(-3px);
+
+box-shadow:
+
+0 0 25px rgba(255,20,147,.4);
+
+}
+
+/* Input */
+
+.divya-input{
+
+transition:.35s;
+
+}
+
+.divya-input:focus{
+
+box-shadow:
+
+0 0 0 1px #ff4fa2,
+
+0 0 20px rgba(255,20,147,.25);
+
+}
+
+/* Avatar Glow */
+
+.avatar{
+
+animation:pulseGlow 2.5s infinite;
+
+}
+
+@keyframes pulseGlow{
+
+0%{
+
+filter:drop-shadow(0 0 8px rgba(255,0,150,.3));
+
+}
+
+50%{
+
+filter:drop-shadow(0 0 30px rgba(255,0,150,.6));
+
+}
+
+100%{
+
+filter:drop-shadow(0 0 8px rgba(255,0,150,.3));
+
+}
+
+}
+
+/* Floating Sparkles */
+
+.sparkle{
+
+position:absolute;
+
+border-radius:50%;
+
+background:#ff8fd1;
+
+opacity:.6;
+
+animation:sparkle 8s linear infinite;
+
+}
+
+.sparkle:nth-child(1){
+
+width:6px;
+height:6px;
+
+left:10%;
+
+animation-delay:0s;
+
+}
+
+.sparkle:nth-child(2){
+
+width:10px;
+height:10px;
+
+left:40%;
+
+animation-delay:2s;
+
+}
+
+.sparkle:nth-child(3){
+
+width:7px;
+height:7px;
+
+left:75%;
+
+animation-delay:4s;
+
+}
+
+.sparkle:nth-child(4){
+
+width:5px;
+height:5px;
+
+left:90%;
+
+animation-delay:6s;
+
+}
+
+@keyframes sparkle{
+
+0%{
+
+transform:translateY(120%) scale(.5);
+
+opacity:0;
+
+}
+
+20%{
+
+opacity:1;
+
+}
+
+80%{
+
+opacity:1;
+
+}
+
+100%{
+
+transform:translateY(-900%) scale(1.4);
+
+opacity:0;
+
+}
+
+}
