@@ -7,8 +7,10 @@ import AutoCompleteSearch from './challenges/AutoCompleteSearch';
 import VirtualizedList from './challenges/VirtualizedList';
 import ProgressBar from './challenges/ProgressBar';
 import OTPInput from './challenges/OTPInput';
+import Assistant from './assistant/Assistant';
 export default function App() {
   return (
+    <>
     <BrowserRouter>
         <Routes>
           <Route path="/" element={<HubHome />} />
@@ -20,5 +22,7 @@ export default function App() {
                  <Route path="/virtualizedlist" element={<VirtualizedList/>}/>
         </Routes>
     </BrowserRouter>
+    <Assistant />
+  </>
   );
 }
