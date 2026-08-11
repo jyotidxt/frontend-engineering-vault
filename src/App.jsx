@@ -8,6 +8,7 @@ import VirtualizedList from './challenges/VirtualizedList';
 import ProgressBar from './challenges/ProgressBar';
 import OTPInput from './challenges/OTPInput';
 import Assistant from './assistant/Assistant';
+import Fevscsidebar from './challenges/Fevscsidebar';
 export default function App() {
   return (
     <>
@@ -20,6 +21,7 @@ export default function App() {
            <Route path="/otpinput" element={<OTPInput/>}/>
                <Route path="/progressbar" element={<ProgressBar/>}/>
                  <Route path="/virtualizedlist" element={<VirtualizedList/>}/>
+                 <Route path="/fevscsidebar" element={<Fevscsidebar/>} />
         </Routes>
     </BrowserRouter>
     <Assistant />

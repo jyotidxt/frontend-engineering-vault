@@ -40,9 +40,17 @@ export const challenges = [
     path: "/progressbar",
     companyName: "Google, Uber, Meta",
   },
-    {
+   {
     id: 6,
-    title: "06 Virtualized List (Infinite Scroll)",
+    title: "06 File Explorer / VS code sidebar",
+    type: "Machine Coding",
+    description: "In this, we build a File & Folder Structure / File Explorer / VS Code Sidebar UI like VS Code sidebar using React – a common frontend interview question.",
+    path: "/fevscsidebar",
+   companyName: "Microsoft, Atlassian",
+  },,
+    {
+    id: 7,
+    title: "07 Virtualized List (Infinite Scroll)",
     type: "Machine Coding",
     description: "Coming...",
     path: "/virtualizedlist",
