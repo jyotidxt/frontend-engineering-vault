@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { challenges } from './src/challengesData';
-import { interviewQuestions } from './src/InterviewData';
+import { interviewQuestions } from './src/interviewData';
 
 export default function HubHome() {
   return (
