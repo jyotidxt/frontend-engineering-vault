@@ -9,6 +9,7 @@ import ProgressBar from './challenges/ProgressBar';
 import OTPInput from './challenges/OTPInput';
 import Assistant from './assistant/Assistant';
 import Fevscsidebar from './challenges/Fevscsidebar';
+import FDInterview from './interViewPrep/FDInterview';
 export default function App() {
   return (
     <>
@@ -22,6 +23,7 @@ export default function App() {
                <Route path="/progressbar" element={<ProgressBar/>}/>
                  <Route path="/virtualizedlist" element={<VirtualizedList/>}/>
                  <Route path="/fevscsidebar" element={<Fevscsidebar/>} />
+                  <Route path="/fdinterview" element={<FDInterview/>} />
         </Routes>
     </BrowserRouter>
     <Assistant />
