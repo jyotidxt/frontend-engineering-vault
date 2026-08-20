@@ -1,8 +1,15 @@
 // src/interviewData.js
 
 export const interviewQuestions = [
-  {
+ {
     id: 1,
+    type: 'Frontend Interview Prep',
+    companyName: 'Frontend Hub',
+    title: 'JavaScript , React.js',
+    description: 'JavaScript and React.js Most Asked Questions.',
+    path: '/frontendinter'
+  }, {
+    id: 2,
     type: 'Interview Prep',
     companyName: 'Frontend Hub',
     title: 'HTML 5',

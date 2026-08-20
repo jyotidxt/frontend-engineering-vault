@@ -10,6 +10,7 @@ import OTPInput from './challenges/OTPInput';
 import Assistant from './assistant/Assistant';
 import Fevscsidebar from './challenges/Fevscsidebar';
 import FDInterview from './interViewPrep/FDInterview';
+import FrontendInter from './interViewPrep/FrontendInter';
 export default function App() {
   return (
     <>
@@ -24,6 +25,7 @@ export default function App() {
                  <Route path="/virtualizedlist" element={<VirtualizedList/>}/>
                  <Route path="/fevscsidebar" element={<Fevscsidebar/>} />
                   <Route path="/fdinterview" element={<FDInterview/>} />
+                   <Route path="/frontendinter" element={<FrontendInter/>} />
         </Routes>
     </BrowserRouter>
     <Assistant />
