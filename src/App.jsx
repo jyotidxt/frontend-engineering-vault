@@ -11,6 +11,7 @@ import Assistant from './assistant/Assistant';
 import Fevscsidebar from './challenges/Fevscsidebar';
 import FDInterview from './interViewPrep/FDInterview';
 import FrontendInter from './interViewPrep/FrontendInter';
+import Toast from './systemDesignPrep/Toast';
 export default function App() {
   return (
     <>
@@ -26,6 +27,7 @@ export default function App() {
                  <Route path="/fevscsidebar" element={<Fevscsidebar/>} />
                   <Route path="/fdinterview" element={<FDInterview/>} />
                    <Route path="/frontendinter" element={<FrontendInter/>} />
+                    <Route path="/toast" element={<Toast/>} />
         </Routes>
     </BrowserRouter>
     <Assistant />

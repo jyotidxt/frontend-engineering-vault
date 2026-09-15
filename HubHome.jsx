@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { challenges } from './src/challengesData';
 import { interviewQuestions } from './src/interviewData';
+import  {systemDesignData} from './src/systemDesignData'
 
 export default function HubHome() {
   return (
@@ -62,7 +63,7 @@ export default function HubHome() {
                   <span className="text-[10px] uppercase font-mono font-black tracking-wider px-2.5 py-1 bg-green-100 text-slate-800 rounded-md border border-green-500 inline-block mb-3">
                     {item.companyName}
                   </span>
-                  
+
                   {/* Description */}
                   <p className="text-[#444444] text-xs font-medium mt-2 leading-relaxed mb-8 min-h-[48px]">
                     {item.description}
@@ -117,7 +118,7 @@ export default function HubHome() {
                   <span className="text-[10px] uppercase font-mono font-black tracking-wider px-2.5 py-1 bg-green-100 text-slate-800 rounded-md border border-green-500 inline-block mb-3">
                     {item.companyName}
                   </span>
-                  
+
                   {/* Description */}
                   <p className="text-[#444444] text-xs font-medium mt-2 leading-relaxed mb-8 min-h-[48px]">
                     {item.description}
@@ -133,6 +134,60 @@ export default function HubHome() {
                 </Link>
               </div>
             ))}
+{/* --- SECTION 3 : SYSTEM DESIGN --- */}
+<section className="mt-20">
+  <div className="flex items-center gap-4 mb-8">
+    <h2 className="text-2xl font-black uppercase tracking-tight text-[#43293A]">
+      System Design Questions
+    </h2>
+    <div className="flex-1 h-1 rounded-full bg-gradient-to-r from-pink-300 via-rose-200 to-transparent"></div>
+    <span className="font-mono text-xs font-bold px-3 py-1 bg-[#FCE7F3] text-[#9D174D] border-2 border-[#F9A8D4] rounded-full shadow-sm">
+      {systemDesignData.length} ITEMS
+    </span>
+  </div>
+
+  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+    {systemDesignData.map((item) => (
+      <div
+        key={item.id}
+        className="group relative overflow-hidden bg-gradient-to-br from-white via-[#FFF7FA] to-[#FDF2F8] border-2 border-[#FBCFE8] rounded-3xl p-6 transition-all duration-500 ease-out shadow-[0_10px_30px_rgba(244,114,182,0.08)] hover:-translate-y-2 hover:border-[#F472B6] hover:shadow-[0_18px_45px_rgba(244,114,182,0.22)] flex flex-col justify-between"
+      >
+        <div className="absolute inset-0 bg-gradient-to-tr from-pink-100/0 via-white/40 to-rose-100/30 opacity-0 group-hover:opacity-100 transition duration-500"></div>
+
+        <div className="relative z-10">
+          <div className="flex justify-between items-center mb-5">
+            <span className="text-[10px] uppercase font-mono font-black tracking-wider px-2.5 py-1 bg-[#FCE7F3] text-[#BE185D] rounded-full border border-[#F9A8D4]">
+              {item.type}
+            </span>
+            <span className="text-xs font-mono font-bold text-[#D946EF]">
+              #{item.id}
+            </span>
+          </div>
+
+          <h3 className="text-xl font-black tracking-tight mb-3 text-[#3F2434] group-hover:text-[#BE185D] transition-colors duration-300">
+            {item.title}
+          </h3>
+
+          <span className="inline-block text-[10px] uppercase font-mono font-black tracking-wider px-2.5 py-1 bg-[#FDF2F8] text-[#9D174D] rounded-full border border-[#FBCFE8] mb-3">
+            {item.category}
+          </span>
+
+          <p className="text-[#6B4A5C] text-xs font-medium leading-relaxed mb-8 min-h-[48px]">
+            {item.description}
+          </p>
+        </div>
+
+        <Link
+          to={item.path}
+          className="relative z-10 block w-full text-center bg-gradient-to-r from-[#EC4899] to-[#F472B6] text-white font-black py-3 rounded-2xl text-xs uppercase tracking-[0.18em] transition-all duration-300 hover:from-[#DB2777] hover:to-[#EC4899] hover:shadow-lg hover:shadow-pink-300/40 hover:scale-[1.02] active:scale-[0.98]"
+        >
+          Explore →
+        </Link>
+      </div>
+    ))}
+  </div>
+</section>
+
           </div>
         </section>
 
