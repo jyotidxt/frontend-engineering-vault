@@ -1,0 +1,35 @@
+# Toast Notification — High Level Design
+
+## HLD Diagram
+
+![Toast Notification HLD](./hld.svg)
+
+## Architecture Flow
+
+User Clicks Button → Toast.jsx → useNotification Hook → Notification Component → Toast UI
+
+ User clicks a button
+- Toast.jsx triggers notification
+- useNotification manages state
+- Notification component renders the UI
+
+## Components
+
+- User
+- Toast.jsx
+- useNotification Hook
+- Notification Component
+- Toast UI
+
+
+
+
+
+
+
+
+
+
+
+
+
