@@ -1,7 +1,7 @@
 //  to trigger notification everytime buttton clciked 
 
 import { useState } from "react";
-import Notification from "../components/Notifiaction";
+import Notification from '../components/Notification'
 
 
 const positionClasses = {

@@ -11,7 +11,8 @@ import Assistant from './assistant/Assistant';
 import Fevscsidebar from './challenges/Fevscsidebar';
 import FDInterview from './interViewPrep/FDInterview';
 import FrontendInter from './interViewPrep/FrontendInter';
-import Toast from './systemDesignPrep/Toast';
+import Toast from './systemDesignPrep/ToastNotification/Toast';
+
 export default function App() {
   return (
     <>
