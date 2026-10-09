@@ -12,7 +12,7 @@ import Fevscsidebar from './challenges/Fevscsidebar';
 import FDInterview from './interViewPrep/FDInterview';
 import FrontendInter from './interViewPrep/FrontendInter';
 import Toast from './systemDesignPrep/ToastNotification/Toast';
-
+import ReactFresher from './interViewPrep/components/ReactFresher'
 export default function App() {
   return (
     <>
@@ -29,6 +29,7 @@ export default function App() {
                   <Route path="/fdinterview" element={<FDInterview/>} />
                    <Route path="/frontendinter" element={<FrontendInter/>} />
                     <Route path="/toast" element={<Toast/>} />
+                    <Route path="/reactfresher" element={<ReactFresher/>}/>
         </Routes>
     </BrowserRouter>
     <Assistant />
